@@ -87,7 +87,6 @@ p {
 .form-container input[type="text"],
 .form-container input[type="email"],
 .form-container input[type="date"],
-.form-container input[type="number"],
 .form-container select {
   width: 100%;
   padding: 10px;
@@ -116,25 +115,40 @@ p {
   overflow-x: auto;
 }
 
-.table-container table {
+.reservation-table {
   width: 100%;
   border-collapse: collapse;
 }
 
-.table-container th,
-.table-container td {
+.reservation-table th,
+.reservation-table td {
   padding: 12px;
   border: 1px solid #ddd;
   text-align: left;
 }
 
-.table-container th {
+.reservation-table th {
   background-color: #2c3e50;
   color: white;
 }
 
-.table-container tr:nth-child(even) {
+.reservation-table tr:nth-child(even) {
   background-color: #f2f2f2;
+}
+
+/* Action Button Styles */
+.action-button {
+  background-color: #2c3e50;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.action-button:hover {
+  background-color: #2980b9;
 }
 
 /* Reservation List Styles */
@@ -163,45 +177,11 @@ p {
   color: #666;
 }
 
-.reservation-list li button {
-  background-color: #2c3e50;
-  color: white;
-  padding: 5px 10px;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-  margin-right: 5px;
-}
-
-.reservation-list li button:hover {
-  background-color: #2980b9;
-}
-
-/* Welcome Container Styles */
-.welcome-container {
-  text-align: center;
-  padding: 20px;
-  background-color: #ffffff;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin: 20px 0;
-}
-
-/* Action Button Styles */
-.action-button {
-  background-color: #2c3e50;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin: 10px;
-  text-decoration: none;
-}
-
-.action-button:hover {
-  background-color: #2980b9;
+/* Error Message */
+.error-message {
+  color: #ff0000; /* Red */
+  font-size: 0.9em;
+  margin-top: 5px;
 }
 
 /* Footer */
@@ -243,12 +223,5 @@ p {
   .table-container th,
   .table-container td {
     padding: 8px;
-  }
-
-  /* Error Message */
-  .error-message {
-    color: #ff0000; /* Red */
-    font-size: 0.9em;
-    margin-top: 5px;
   }
 }
